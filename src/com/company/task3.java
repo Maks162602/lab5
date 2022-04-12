@@ -1,56 +1,61 @@
 package com.company;
-
+import java.util.Scanner;
 public class task3 {
     public static void main(String[] args) {
-        int a1[] = new int[5];
-        int a2[] = new int[5];
-        int a3[] = new int[5];
-        double c1 = 0, c2 = 0, c3 = 0;
-        for (int i = 0; i < 5; i++) {
-            a1[i] = (int) Math.round(Math.random() * 5);
-            c1 = c1 + a1[i];
-            System.out.print(a1[i] + " ");
-        }
-        System.out.println();
-        for (int i = 0; i < 5; i++) {
-            a2[i] = (int) Math.round(Math.random() * 5);
-            c2 = c2 + a2[i];
-            System.out.print(a2[i] + " ");
-        }
-        System.out.println();
-        for (int i = 0; i < 5; i++) {
-            a3[i] = (int) Math.round(Math.random() * 5);
-            c3 = c3 + a3[i];
-            System.out.print(a3[i] + " ");
-        }
-        System.out.println();
-        System.out.println(c1 = c1 / 5);
-        System.out.println(c2 = c2 / 5);
-        System.out.println(c3 = c3 / 5);
-        if (c1 < c2)
-            System.out.println("mid1<mid2");
-        else if (c1 > c2)
-            System.out.println("mid1>mid2");
-        else if (c1 == c2)
-            System.out.println("mid1==mid2");
-            // 1 2
+            Scanner zero1 = new Scanner(System.in);
+            Scanner zero2 = new Scanner(System.in);
+            Scanner zero3 = new Scanner(System.in);
+            Scanner zero4 = new Scanner(System.in);
+            Scanner zero5 = new Scanner(System.in);
+            Scanner zero6 = new Scanner(System.in);
 
-        else if (c1 > c3)
-            System.out.println("mid1>mid3");
-        else if (c1 == c3)
-            System.out.println("mid1==mid3");
-        else if (c1 < c3)
-            System.out.println("mid1<mid3");
-            //1 3
 
-        else if (c2 > c3)
-            System.out.println("mid2>mid3");
-        else if (c2 == c3)
-            System.out.println("mid2==mid3");
-        else if (c2 < c3)
-            System.out.println("mid2<mid3");
-        //2 3
+            System.out.println("Введіть підмет і присудок першого числа: ");
+            int m1 = zero1.nextInt();
+            int m2 = zero2.nextInt();
+            if (m1 > m2) {
+                System.out.println("Перший дріб правильний: ");
+            }
+            else
+                System.out.println("Ви ввели не правильний дріб");
+
+
+            System.out.println("Введіть підмет і присудок другого числа: ");
+            int m3 = zero3.nextInt();
+            int m4 = zero4.nextInt();
+            if (m3 > m4) {
+                System.out.println("Другий дріб правильний: ");
+            }
+            else
+                System.out.println("Ви ввели не правильний дріб");
+
+
+            System.out.println("Введіть підмет і присудок третьго числа: ");
+            int m5 = zero5.nextInt();
+            int m6 = zero6.nextInt();
+            if (m5 > m6) {
+                System.out.println("Третій дріб правильний: ");}
+
+            else
+                System.out.println("Ви ввели не правильний дріб");
+
+            int a1, a2, a3;
+            a1 = m1/m2;
+            a2 = m3/m4;
+            a3 = m5/m6;
+
+            if (a1 > a2 && a1 > a3){
+                System.out.println("Перший дріб найбільший");
+            }
+            if (a2 > a1 && a2 > a3){
+                System.out.println("Другий дріб найбільший");
+            }
+            if (a3 > a1 && a3 > a2){
+                System.out.println("Третій дріб найбільший");
+            }
+            else{
+                System.out.println("Ви зробили щось не так");
+            }
+        }
     }
-}
-
 

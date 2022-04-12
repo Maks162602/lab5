@@ -1,20 +1,15 @@
 package com.company;
+import java.util.Scanner;
 
 public class task2 {
-    public static void main(String[] args) {
-        int a1[] = new int[20];
-        int b2[] = new int[20];
-        for (int i = 0; i < 20; i++) {
-            a1[i] = (int) Math.round(Math.random() * 9);
-            System.out.print("1)" + a1[i] + " ");
-            b2[i] = a1[i];
+    public static void main(String[] args){
+        Scanner a1 = new Scanner(System.in);
+        Scanner a2 = new Scanner(System.in);
+        Scanner a3 = new Scanner(System.in);
+        Scanner a4 = new Scanner(System.in);
+        Scanner a5 = new Scanner(System.in);
 
-
-            if (a1[i] % 2 != 0) {
-                b2[i] = b2[i] * 0;
-            }
-            System.out.println("2)" + b2[i] + " ");
-
-        }
+        System.out.println("Введіть назву абревіатури з п'яти слів");
+        System.out.print(a1.nextLine().substring(0,1) + a2.nextLine().substring(0,1)+a3.nextLine().substring(0,1)+a4.nextLine().substring(0,1)+a5.nextLine().substring(0,1));
     }
 }
